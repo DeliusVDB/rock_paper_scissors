@@ -1,32 +1,24 @@
-let x = 0;
+//* create function getComputerChoice that will return "Rock", "Paper", "Scissors". Use Math.random
 
-function getComputerChoice(player) {
-    if (player == 1) {
-        console.log("Rock");
-    } else if (player == 2) {
-        console.log("Paper");
-    }
-    else {
-        console.log("Scissors");
-    }
+//* create function getHumanChoice that will return user input. Don't worry about user typing anything other
+//* than "Rock", "Paper", "Scissors".
 
-    let computerGuesser = (Math.floor(Math.random() * 3) + 1);
-    if (computerGuesser == 1) {
-        console.log("Rock");
-    } else if (computerGuesser == 2) {
-        console.log("Paper");
-    } else {
-        console.log("Scissors");
-    }
+//* create 2 variables, humanScore & computerScore. These variables should keep score.
 
+//* create function called playRound with the parameters for humanChoice and computerChoice.
+//* humanChoice should not be case-sensitive
+//* Log the winner.
+//* increment human- or computerScore based on round winner
 
-    if (player > computerGuesser) {
-        console.log("Player Wins");
-    } else if (player == computerGuesser) {
-        console.log("TIE! \n Go Again...");
-    } else if (player < computerGuesser) {
-        console.log("Computer Wins");
-    }
-}
+//* Example Code
+//? function playRound(humanChoice, computerChoice) {
+//?     // your code here!
+//? }
 
-console.log(getComputerChoice(prompt("Choose your fighter! \n 1. Rock \n 2. Paper \n 3. Scissor")));
+//? const humanSelection = getHumanChoice();
+//? const computerSelection = getComputerChoice();
+
+//? playRound(humanSelection, computerSelection);
+
+//* create function called playGame to play 5 games.
+//* move playRound and score variables inside the playGame function.
